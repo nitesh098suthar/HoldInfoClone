@@ -5,7 +5,7 @@ const Body = () => {
   const [value, setValue] = useState([]);
 
   const item = async () => {
-    const { data } = await axios.get("http://localhost:9000/api/v1/data");
+    const { data } = await axios.get("https://holdinfo-clone.onrender.com/api/v1/data");
     console.log(data.data);
     setValue(data.data);
   };
